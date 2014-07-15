@@ -1,0 +1,9 @@
+{% extends 'DevTicsHelloBundle::base.html.twig' %}
+{% block body %}
+    <h1>
+        Hello {{ name | upper | capitalize | slice(0, 3) }}...!
+    </h1>
+        
+{% endblock %}
+
+

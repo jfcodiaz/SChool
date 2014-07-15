@@ -1,0 +1,7 @@
+devtics_hello_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DevTicsHelloBundle:Default:index }
+    
+devtics_hello_homepage2:
+    path:     /tt/
+    defaults: { _controller: DevTicsHelloBundle:Default:tt }

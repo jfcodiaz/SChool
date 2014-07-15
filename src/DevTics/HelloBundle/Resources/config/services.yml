@@ -1,0 +1,7 @@
+parameters:
+#    dev_tic_hello.example.class: DevTic\HelloBundle\Example
+
+services:
+#    dev_tic_hello.example:
+#        class: %dev_tic_hello.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,4 @@
+devtics_hello:
+    resource: "@DevTicsHelloBundle/Resources/config/routing.yml"
+    prefix:   /
+
