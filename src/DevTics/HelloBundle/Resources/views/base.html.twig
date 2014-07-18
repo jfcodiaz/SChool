@@ -6,10 +6,23 @@
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
-    <body> 
+    <body>    
+        <div>{{ asset('images/logo.png') }}</div>
+        <div>{{ url('devtics_hello_homepage', {'name': 'ss'}) }}</div>
+        <div>{{ path('devtics_hello_homepage', {'name': 'ss'}) }}</div>
+         <div>
+             {{ include( 'DevTicsHelloBundle:Pruebas:articleDetails.html.twig', { 'articles' : articles}) }}
+        </div>
         <div style="background: #aaa; width: 50%; margin: 0 auto">
             {% block body %}{% endblock %}
             {% block javascripts %}{% endblock %}
+        </div>        
+        <div id="sidebar">
+        {{ render(controller('DevTicsHelloBundle:Default:recentArticles', {
+            'max': 3
+        }))}}
         </div>
+        
+       
     </body>
 </html>

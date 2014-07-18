@@ -5,3 +5,6 @@ devtics_hello_homepage:
 devtics_hello_homepage2:
     path:     /tt/
     defaults: { _controller: DevTicsHelloBundle:Default:tt }
+#devtics_hello_recentArticles:
+#    path: /recentArticles/{max}
+#    defaults: { _controller: DevTicsHelloBundle:Default:recentArticles}
