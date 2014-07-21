@@ -7,7 +7,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class DefaultController extends Controller
 {
     public function indexAction($name)
-    {
+    { //coment
         return $this->render('DevTicsHelloBundle:Default:index.html.twig', [
             'name' => $name,
             'articles' => [ 
