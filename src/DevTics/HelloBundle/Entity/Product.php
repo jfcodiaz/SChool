@@ -1,13 +1,13 @@
 <?php
 
-namespace Acme\DemoBundle\Entity\Entity;
+namespace DevTics\HelloBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Prudcut
+ * Product
  */
-class Prudcut
+class Product
 {
     /**
      * @var integer
@@ -44,7 +44,7 @@ class Prudcut
      * Set name
      *
      * @param string $name
-     * @return Prudcut
+     * @return Product
      */
     public function setName($name)
     {
@@ -67,7 +67,7 @@ class Prudcut
      * Set price
      *
      * @param integer $price
-     * @return Prudcut
+     * @return Product
      */
     public function setPrice($price)
     {
@@ -90,7 +90,7 @@ class Prudcut
      * Set description
      *
      * @param string $description
-     * @return Prudcut
+     * @return Product
      */
     public function setDescription($description)
     {

@@ -67,8 +67,23 @@ class DefaultController extends Controller
         ]);
     }
     public function ttAction(){
-//        $r =  new \Symfony\Component\HttpFoundation\Response();
-//        $r->setContent('Hola Mundo xD');
-     //   return $this->render('DevTicsHelloBundle::');
+        $p = new \DevTics\HelloBundle\Entity\Product();
+        $p->setDescription("description")
+          ->setName('nombre')
+          ->setPrice(55);
+        $m = $this->getDoctrine()->getManager();
+        $m->persist($p);
+        $m->flush();
+                
+        $r =  new \Symfony\Component\HttpFoundation\Response();
+      return  $r->setContent('Hola Mundo ssxD');
+     //   return $this->render('DevTicsHelloBundle::'); 
+    }
+    
+    public function getProductsAction(){
+        $productos = $this->getDoctrine()->getRepository('DevTicsHelloBundle:Product')->getAllProducts();
+        $r =  new \Symfony\Component\HttpFoundation\Response();
+        $r->headers->set('Content-Type', 'application/json');
+        return  $r->setContent(json_encode($productos));
     }
 }
