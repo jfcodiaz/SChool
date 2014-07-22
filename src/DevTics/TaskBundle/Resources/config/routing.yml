@@ -1,0 +1,7 @@
+devtics_task_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: DevTicsTaskBundle:Default:index }
+
+devtics_task_new:
+    path: /new
+    defaults: { _controller: DevTicsTaskBundle:Default:new }

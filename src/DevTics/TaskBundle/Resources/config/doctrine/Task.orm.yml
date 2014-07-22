@@ -1,0 +1,17 @@
+DevTics\TaskBundle\Entity\Task:
+    type: entity
+    table: null
+    repositoryClass: DevTics\TaskBundle\Entity\TaskRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        task:
+            type: string
+            length: '150'
+        dueDate:
+            type: datetime
+    lifecycleCallbacks: {  }
