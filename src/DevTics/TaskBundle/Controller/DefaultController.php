@@ -5,6 +5,8 @@ namespace DevTics\TaskBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use DevTics\TaskBundle\Entity\Task;
 use Symfony\Component\HttpFoundation\Request;
+use \Symfony\Component\HttpFoundation\Response;
+
 class DefaultController extends Controller {
     public function indexAction ($name) {
         return $this->render('DevTicsTaskBundle:Default:index.html.twig', array('name' => $name));
@@ -25,7 +27,9 @@ class DefaultController extends Controller {
         $form->handleRequest($request);
         
         if($form->isValid()){
-          //  return $this->redirect($this->generateUrl('task_success'));
+            $nexAction = $form->get('saveAndAdd')->isClicked()? 'task_new' : 'task_success';
+            return new Response($nexAction);
+            //return $this->redirect($this->generateUrl('task_success'));
         }
         return $this->render('DevTicsTaskBundle:Default:new.html.twig',[
             'form' => $form->createView()

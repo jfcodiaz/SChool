@@ -5,3 +5,4 @@ devtics_task_homepage:
 devtics_task_new:
     path: /new
     defaults: { _controller: DevTicsTaskBundle:Default:new }
+ 
