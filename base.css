@@ -5,9 +5,12 @@
 
 html, body{
     height: 100%;
+    margin: 0;
 }
 
 .header{
+    
+    z-index: 100;
     background: #555555; /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
     background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIyJSIgc3RvcC1jb2xvcj0iIzU1NTU1NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
@@ -19,9 +22,16 @@ html, body{
     background: linear-gradient(to bottom,  #555555 2%,#000000 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#000000',GradientType=0 ); /* IE6-8 */
     
+    
     -webkit-box-shadow: 0px 1px 19px 3px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    0px 1px 19px 3px rgba(50, 50, 50, 0.75);
     box-shadow:         0px 1px 19px 3px rgba(50, 50, 50, 0.75);
+    
+    /*position: fixed;*/
+    width: 100%;
+    margin-top: 0;
+    /*top:0;*/
+ 
 
 }
 
@@ -76,6 +86,9 @@ background: -ms-linear-gradient(top,  #ffffff 2%,#cecece 100%); /* IE10+ */
 background: linear-gradient(to bottom,  #ffffff 2%,#cecece 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cecece',GradientType=0 ); /* IE6-8 */
 
+background-color: #cecece;
+background-repeat: no-repeat;
+    background-attachment: fixed;
     
 }
 
@@ -96,6 +109,33 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
     padding: 1em 0;
 }
 
+.content{
+    
+    /*width : 80%;*/
+    /*background-color: blue;*/
+    color: black;
+    /*float: right;*/
+    background-color : white;
+    margin-left: 15em;
+    font-size: 12pt;
+    border: solid #c0c0c0 1px;
+    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 20px;    
+    padding-top: 35px;
+}
+
+.main{
+    position: relative;
+    z-index: 15;
+    /*overflow: hidden;*/
+    margin : 2em 10em;
+    background-color : aqua;       
+    margin-bottom: 10em;
+    margin-top: 0;
+}
 
 .clean{
     clear: both;
