@@ -27,10 +27,9 @@
            
            
         </style>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="js/templatefixs.js" type="text/javascript"></script>
+      
         
-        <link href="base.css" rel="stylesheet" type="text/css"/>
+        <link href="css/base.css" rel="stylesheet" type="text/css"/>
         <!--[if gte IE 9]>
             <style type="text/css">
             .gradient {
@@ -38,6 +37,7 @@
             }
         </style>
       <![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
     </head>
     <body>
         <header class="header">
@@ -75,12 +75,15 @@
         </header>
         <section class="main">            
             <section class="content">
-                <?php for($i=0;$i<1000;$i++) :?>
+                <?php for($i=0;$i<100;$i++) :?>
                 <p> Contenido Aqui</p>
                 <?php endfor;?>
                  <div class="clean"></div>
             </section>
             <div class="clean"></div>
         </section>
+        <div class="menuscroll"> Menu despues del scrooll</div>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="js/templatefixs.js" type="text/javascript"></script>
     </body>
 </html>

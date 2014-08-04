@@ -1,0 +1,5 @@
+.sprites{ background:url("sprites.png") top left no-repeat; }
+.logo_pg{ width:393px; height:98px; background-position:-10px -10px; }
+.close{ width:27px; height:23px; background-position:-10px -118px; }
+.mobil_menu{ width:27px; height:23px; background-position:-47px -118px; }
+

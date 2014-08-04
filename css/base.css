@@ -2,7 +2,7 @@
     Created on : 01-ago-2014, 2:09:59
     Author     : pako
 */
-
+@import "sprites.css";
 html, body{
     height: 100%;
     margin: 0;
@@ -31,8 +31,10 @@ html, body{
     width: 100%;
     margin-top: 0;
     /*top:0;*/
- 
-
+}
+.mobil header{
+    position: fixed;
+    top: 0;
 }
 
 header nav {
@@ -40,9 +42,25 @@ header nav {
    padding: 1em 10em 0 0;
    
 }
+.table header nav{
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+}
+
+.mobil header nav{
+    display: none;
+}
 header nav ul{
     list-style-type: none;
     margin-top: 1em;
+}
+
+.table header nav ul{
+    margin-bottom: 3.5em;
+    margin-left: 1em;
 }
 
 header nav ul li{
@@ -50,26 +68,37 @@ header nav ul li{
     margin: 2px;
     /*background: red;*/
     height: 65px;
-    background-image: url(img/divMenuTop.png);
+    background-image: url(../img/divMenuTop.png);
     background-repeat: no-repeat;
     padding-top: 1.5em;
 }
 
+.table header nav ul li{
+    height: 0;
+    /*padding: 1;*/
+}
+
+ 
 header nav ul li a{
     color: white;
     text-decoration: none;
     font-weight: normal;
     font-family: helvetica;
-    font-size: 12pt;
-    
-    margin-left: 2em;
-    margin-right: 2em;
-    
+    font-size: 12pt;    
+    margin-left: .5em;
+    margin-right: .5em;
     display: block;
     
 }
+
+
+.table header nav ul li a{
+    margin-left: 0.1em;
+    margin-right: .1em; 
+    margin-top: -1.5em
+}
 header nav ul li a{
-    background-color: green;
+    /*background-color: green;*/
     padding: 5px;
 }
 
@@ -92,21 +121,56 @@ background-repeat: no-repeat;
     
 }
 
-.logo {
+header .logo {
     font-size: 1em;
     text-indent: -100000px;
     padding:  0 10em;
+    height: auto;
+    width: auto;
 }
+
+
+.table .header .logo{
+    padding: 0 .5em;
+  
+}
+
+.mobil .header .logo{
+    padding: 0 .2em;
+    height: 50px;
+    float: left;
+    width: 150px;
+}
+
+
 .logo a{
-    background: url(img/logo.png);
+    background: url(../img/logo.png);
     /*    background-color: red;      */
-    width: 393px;
+    width: 420px;
     height: 98px;
     float: left;
-    /*background-size: 100% ;*/
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 10px 10px;
     padding: 1em 0;
+}
+
+
+.table .logo a{
+    background-position: 2px 2px;
+    width: 170px;
+    background-size: 160px ;
+    padding: 0 0;
+    height: 40px;
+    margin-top: 1em;
+}
+
+.mobil .logo a{
+
+    background-position: 2px 2px;
+    width: 150px;
+    background-size: 97% ;
+    padding: 10% 0;
+    height:45px;
 }
 
 .content{
@@ -127,6 +191,13 @@ background-repeat: no-repeat;
     padding-top: 35px;
 }
 
+.table .content{
+    margin-left: 0;
+}
+.mobil .content{
+    margin-left: 0em;
+    margin-top: 1.6em;
+}
 .main{
     position: relative;
     z-index: 15;
@@ -136,7 +207,27 @@ background-repeat: no-repeat;
     margin-bottom: 10em;
     margin-top: 0;
 }
+.table .main{
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.mobil .main{
+    margin-left: 2px;
+    margin-right: 2px;
+}
 
 .clean{
     clear: both;
+}
+
+.btn-menu-mobil{
+    float: right;
+    display: block;
+    position: relative;
+    text-indent: -10000px;
+    font-size: 0px;
+    overflow: hidden;
+    top: 10px;
+    left: -10px;
 }
