@@ -12,4 +12,19 @@ devtics_get_products:
 #devtics_hello_recentArticles:
 #    path: /recentArticles/{max}
 #    defaults: { _controller: DevTicsHelloBundle:Default:recentArticles}
-    
+#login:
+#    path: /login
+#    defaults: { _controller: DevTicsHelloBundle:Security:login}
+
+login_check:
+    path: /login_check
+    defaults: { _controller: DevTicsHelloBundle:Security:logincheck}
+#devtics_logout:
+#    parttern: /logout
+devtics_login:
+    path:     /login
+    defaults: { _controller: DevTicsHelloBundle:SecurityController:login }
+
+devtivs_admin:
+    path: /admin2
+    defaults: { _controller: DevTicsHelloBundle:Default:admin }

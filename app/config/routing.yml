@@ -1,6 +1,6 @@
-devtics_task:
-    resource: "@DevTicsTaskBundle/Resources/config/routing.yml"
-    prefix:   /task/
+#devtics_task:
+#    resource: "@DevTicsTaskBundle/Resources/config/routing.yml"
+#    prefix:   /task/
 
 devtics_hello:
     resource: "@DevTicsHelloBundle/Resources/config/routing.yml"

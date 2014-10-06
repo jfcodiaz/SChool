@@ -6,6 +6,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
+    public function adminAction(){
+        return new \Symfony\Component\HttpFoundation\Response('OK Admin');
+    }
     public function indexAction($name)
     { //coment
         return $this->render('DevTicsHelloBundle:Default:index.html.twig', [

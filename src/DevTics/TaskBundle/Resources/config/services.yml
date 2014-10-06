@@ -1,7 +1,0 @@
-parameters:
-#    dev_tics_task.example.class: DevTics\TaskBundle\Example
-
-services:
-#    dev_tics_task.example:
-#        class: %dev_tics_task.example.class%
-#        arguments: [@service_id, "plain_value", %parameter%]
